@@ -22,4 +22,5 @@ function moo() {
     var str = document.getElementById("text").value;
     var parts = str.split(".");
     str = parts.join(" -moo.");
+    document.getElementById("text").value = str;
 }
