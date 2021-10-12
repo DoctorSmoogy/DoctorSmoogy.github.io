@@ -20,12 +20,6 @@ function radioButton() {
 function moo() {
     document.getElementById("text").style.textTransform = "uppercase";
     var str = document.getElementById("text").value;
-    var parts = str.split("");
-    for(var i = 0; i < parts.length; i++) {
-        if(parts[i] == ".") {
-            parts[i] = "-Moo.";
-        }
-    }
-    str = parts.join("");
-    document.getElementById("text").value = str;
+    var parts = str.split(".");
+    str = parts.join(" -moo.");
 }
